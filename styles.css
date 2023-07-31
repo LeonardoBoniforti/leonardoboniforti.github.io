@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado y navegación */
+header {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los lados */
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+}
+
+/*Hover*/
+header:hover {
+  background-color: #223;
+  transition: all 0.5s;
+}
+
+.logo {
+  margin-right: 20px; /* Espacio entre el logo y los enlaces del header */
+  /*position: relative;*/
+}
+
+.logo .icono {
+  max-width: 50px;
+  border-radius: 50%;
+  border: 0.5px solid #333;;
+}
+
+/*Hover*/
+.logo .icono:hover {
+  max-width: 70px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  /*position: absolute;*/
+}
+
+nav {
+  display: flex;
+  flex: 1; /* El resto del espacio disponible será ocupado por los enlaces del header */
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-size: 1.2rem;
+  color: #666;
+  transition: all 0.3s;
+}
+
+/* Estilos para el contenido */
+/* Nuevos estilos para las imágenes de los productos */
+main {
+  padding: 20px;
+  background-color: gray;
+}
+
+main:hover {
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+
+section#productos {
+  text-align: center; /* Centra los elementos dentro de la sección */
+}
+
+.product-item {
+  display: inline-block; /* Hace que los elementos se muestren en línea y puedan centrarse */
+  margin: 10px; /* Agrega un pequeño margen entre las imágenes */
+}
+
+.product-item img {
+  min-width: 300px;
+  max-width: 400px; /* Establece el tamaño máximo de las imágenes */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  min-width: 300px;
+}
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
