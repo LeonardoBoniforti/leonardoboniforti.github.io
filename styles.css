@@ -37,7 +37,7 @@ header:hover {
 
 /*Hover*/
 .logo .icono:hover {
-  max-width: 70px;
+  max-width: 90px;
   border-radius: 50%;
   transition: all 0.5s;
   /*position: absolute;*/
@@ -65,10 +65,16 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav .hover:hover {
   font-size: 1.2rem;
   color: #666;
   transition: all 0.3s;
+}
+
+/* Estilos de los iconos de las redes sociales*/
+.redes {
+  width: 30px;
+  height: 30px;
 }
 
 /* Estilos para el contenido */
