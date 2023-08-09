@@ -9,20 +9,23 @@ body {
 /* Estilos para el encabezado y navegación */
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between; /* Distribuye los elementos a los lados */
   align-items: center; /* Centra verticalmente los elementos */
-  background-color: #333;
+  background-color: #223;
   color: #fff;
   padding: 10px;
   width: 100%;
   position: fixed;
 }
 
-/*Hover*/
+/*Header hover
 header:hover {
   background-color: #223;
   transition: all 0.5s;
-}
+}*/
+
+/**Div del logo*/
 
 .logo {
   margin-right: 20px; /* Espacio entre el logo y los enlaces del header */
@@ -35,7 +38,7 @@ header:hover {
   border: 0.5px solid #333;;
 }
 
-/*Hover*/
+/*Icono Hover*/
 .logo .icono:hover {
   max-width: 90px;
   border-radius: 50%;
@@ -43,10 +46,19 @@ header:hover {
   /*position: absolute;*/
 }
 
+
+/************Barra de Menu Label e Input************/
+
+#menu, .img-menu {
+  display: none;
+}
+
+
+/************Nav del Menu************/
 nav {
   display: flex;
-  flex: 1; /* El resto del espacio disponible será ocupado por los enlaces del header */
-  justify-content: flex-end;
+  /*flex: 1;*/ /* El resto del espacio disponible será ocupado por los enlaces del header */
+  /*justify-content: flex-end;*/
 }
 
 nav ul {
@@ -75,6 +87,12 @@ nav .hover:hover {
 .redes {
   width: 30px;
   height: 30px;
+}
+
+/* Estilos del icono del Menu*/
+.img-menu{
+  width: 50px;
+  height: 50px;
 }
 
 /* Estilos para el contenido */
@@ -116,4 +134,55 @@ footer {
 footer a {
   color: #fff;
   text-decoration: none;
+}
+
+
+
+/****************************Los Media Querys Responsive****************************/
+
+@media(max-width:991px) {
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .logo .icono:hover {
+    max-width: 50px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    /*position: absolute;*/
+  }
+
+  .img-menu {
+    display: initial;
+    margin-right: 20px;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: none;
+  }
+
+
+  nav ul {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  #menu:checked ~ nav {
+    display: flex;
+    background-color: #223;
+    width: 100%;
+  }
+
+
+  .dropdown-menu {
+    max-width: 200px;
+  } 
+  
 }
